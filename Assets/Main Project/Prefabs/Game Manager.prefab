@@ -1,0 +1,134 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3633986905156489183
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5419712702705736864}
+  - component: {fileID: 4306779259825031355}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5419712702705736864
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3633986905156489183}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8075570083338161639}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4306779259825031355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3633986905156489183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4150a67d251c773429c53337621f1316, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: Theme
+    clip: {fileID: 8300000, guid: 0651b56880a11ef45909b779443691aa, type: 3}
+    volume: 0.1
+    loop: 1
+    source: {fileID: 0}
+  - name: PlayerAttack
+    clip: {fileID: 8300000, guid: 1b46739dd2e72b043937117be94011c8, type: 3}
+    volume: 0.5
+    loop: 0
+    source: {fileID: 0}
+  - name: PlayerJump
+    clip: {fileID: 8300000, guid: e5cb0976ee7cf93489107ede5175519b, type: 3}
+    volume: 0.5
+    loop: 0
+    source: {fileID: 0}
+  - name: PlayerWalk
+    clip: {fileID: 8300000, guid: ccb3ad8b5906ef14d921491eb8be7e2d, type: 3}
+    volume: 0.5
+    loop: 0
+    source: {fileID: 0}
+  - name: PinkEnemyAttack
+    clip: {fileID: 8300000, guid: e298ed73017db8c4fa4255c45e5a9f0a, type: 3}
+    volume: 0.5
+    loop: 0
+    source: {fileID: 0}
+  - name: PinkEnemyDie
+    clip: {fileID: 8300000, guid: 516604db9dbf00141b71b702c4fd79c4, type: 3}
+    volume: 0.5
+    loop: 0
+    source: {fileID: 0}
+  - name: PinkEnemyWalk
+    clip: {fileID: 8300000, guid: 2efac6b1f1b3cb84f8090b80da4bf152, type: 3}
+    volume: 0.1
+    loop: 0
+    source: {fileID: 0}
+--- !u!1 &8075570083338161637
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8075570083338161639}
+  - component: {fileID: 8075570083338161636}
+  m_Layer: 0
+  m_Name: Game Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8075570083338161639
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8075570083338161637}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 38.233418, y: -3.8896015, z: -0.6424982}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 5419712702705736864}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8075570083338161636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8075570083338161637}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77cbd6c6894e85642bd47c5d66fb210b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trophyCounter: 0
+  pauseMenu: {fileID: 0}
+  winMenu: {fileID: 0}
+  player: {fileID: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  collectedCoins: []
+  collectedKeys: []
+  Coin: {fileID: 5053030550807385318, guid: 31be11f71b2d7734f9fe15444f63170a, type: 3}
+  Key: {fileID: 1385037270852388198, guid: a46342355e224f047826eb515d9f3470, type: 3}
